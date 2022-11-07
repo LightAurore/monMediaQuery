@@ -70,9 +70,28 @@
 					</p>
 				</section>
 				<section class="articles">
-					<article></article>
-					<article></article>
-					<article></article>
+					<div class="quiz">
+						<div class="quiz--texte">
+							Quelle est la forme du verbe « moudre » à la deuxième personne du pluriel de l'imparfait de l'indicatif ?
+						</div>
+						
+						<div class="quiz--check">
+							<div class="card--check">
+								<input type="checkbox" class-"input--check" id="myCheck" onclick="myFunction()">
+								<div class="card--texte">vous moulûtes</div>
+							</div>
+							<div class="card--check">
+								<input type="checkbox" id="myCheck" onclick="myFunction()" class-"input--check" >
+								<div class="card--texte">vous mouliez</div>
+							</div>
+							<div class="card--check">
+								<input type="checkbox" id="myCheck" onclick="myFunction()" class-"input--check" >
+								<div class="card--texte">vous aviez moulu</div>
+							</div>
+						</div>
+						
+						<button class="quiz--bouton">CORRECTION</button>
+					</div>
 				</section>
 				
 			</div>
@@ -218,6 +237,21 @@
 		</footer>
 	</div>
 	
-	<script src="diaporama.js"></script>
+	<script src="diaporama.js">
+	
+		function myFunction() {
+	  // Get the checkbox
+	  var checkBox = document.getElementById("myCheck");
+	  // Get the output text
+	  var text = document.getElementById("text");
+
+	  // If the checkbox is checked, display the output text
+	  if (checkBox.checked == true){
+		text.style.display = "block";
+	  } else {
+		text.style.display = "none";
+	  }
+	} 
+	</script>
 </body>
 </html>

@@ -241,3 +241,75 @@ color: transparent;
 */
 
 
+
+/*****   Quiz *******/
+.quiz{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	box-shadow: 2px 2px 8px 1px white;
+	background-color: azure;
+	padding: 20px;
+}
+
+.quiz--texte{
+	font-size: 1.2em;
+	color: rgba(9,0,0,1.00);
+	height: 25%;
+}
+
+.quiz--check{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 50%;
+	
+}
+
+.check--card{
+	display: flex;
+	
+	align-items: center;
+	width: 45%;
+	height: 60px;
+	
+	margin: 12px;
+	
+	border-right-color: antiquewhite;
+	border: thin solid black;
+	border-radius: 16px;
+}
+.card--check{
+	width: 45%;
+	height: 60px;
+	margin: 12px;
+	border-right-color: antiquewhite;
+	border: thin solid black;
+	border-radius: 16px;
+}
+
+.input--check{
+	border-radius: 50%;
+	
+}
+
+.card--texte{
+	display: flex;
+	font-size: 1.2em;
+	height: 50px;
+	width: 50%;
+}
+
+
+.quiz--bouton{
+	width: 25%;
+	height: 60px;
+	background-color: aqua;
+	border-radius: 30px;
+	align-self: center;
+	text-align: center;
+	
+	border-right-color: antiquewhite;
+	border: thin solid transparent;
+}
