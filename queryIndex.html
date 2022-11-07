@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Introduction aux Médias Queries</title>
+	<!-- Le lien pour gérer les icônes -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<link rel="stylesheet" href="queryStyle.css">
+	
+	<!--  css bod -->
+	<link rel="stylesheet" href="header.css">
+	
+	<!-- css Diaporama Parallax-->
+	<link rel="stylesheet" href="diaporama.css">
+</head>
+
+<body>
+	<div class="global">
+		<!-- Entête -->
+		<div class="topbar"></div>
+
+		<!-- Header -->
+		<header>
+			<figure>
+				<img class="logo" src="logo.png" alt="logo du site" width="100" height="auto">
+				<figcaption></figcaption>
+			</figure>
+			<h1>Titre</h1>
+		</header>
+
+		<!-- Menu de navigation -->
+		<nav>
+			<a href="#"><i class="fa-solid fa-house"></i>Home</a>
+			<a href="#"><i class="fa-brands fa-servicestack"></i>Services</a>
+			<a href="#"><i class="fa-brands fa-hive"></i>Portfolio</a>
+			<a href="#"><i class="fa-solid fa-images"></i>Blog</a>
+			<a href="#"><i class="fa-regular fa-id-card"></i>About</a>
+			<a href="#"><i class="fa-solid fa-paper-plane"></i>Contact</a>
+		</nav>
+		
+		<div class="bod">
+			<div class="bg-image"></div>
+
+			<div class="bg-text">
+	  		<h2>Blurred Background</h2>
+	  		<h1 style="font-size:50px">I am John Doe</h1>
+	  		<p>And I'm a Photographer</p>
+		</div>
+		</div>
+
+		<!-- La partie principale du site -->
+		<main>
+			<aside>
+				<h1>Company Name</h1>
+				<h3>DASHBOARD</h3>
+				<div class="controle">
+					<a href="">Chart</a>
+					<a href="">Form</a>
+					<a href="">Email</a>
+					<a href="">Profil</a>
+					<a href="">Setting</a>
+				</div>
+			</aside>
+			
+			<div class="sections">
+				<section>
+					<p>
+						SUB - ATOMIQUE 
+					</p>
+				</section>
+				<section class="articles">
+					<article></article>
+					<article></article>
+					<article></article>
+				</section>
+				
+			</div>
+		</main>
+		<!-- Carousel -->
+		<div class="parallax">
+			<!--<div class="parallax-images">
+				<img src="images/paraImg-1.jpg" alt="">
+				<img src="images/paraImg-2.jpg" alt="">
+				<img src="images/paraImg-3.jpg" alt="">
+				<img src="images/paraImg-4.jpg" alt="">
+				<img src="images/paraImg-5.jpg" alt="">
+				<img src="images/paraImg-6.jpg" alt="">
+				<img src="images/paraImg-7.jpg" alt="">
+				<img src="images/paraImg-8.jpg" alt="">
+				<img src="images/paraImg-9.jpg" alt="">
+				<img src="images/paraImg-10.jpg" alt="">
+			</div>-->
+			<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images1/paraImg-1-wide.jpg" style="width:100%" class="pict">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images1/paraImg-2.jpg" style="width:100%" class="pict">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images1/paraImg-3.jpg" style="width:100%" class="pict">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images1/paraImg-4.jpg" style="width:100%" class="pict">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images1/paraImg-5.jpg" style="width:100%" class="pict">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images1/paraImg-6.jpg" style="width:100%" class="pict">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor pict" src="images/paraImg-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor pict" src="images/paraImg-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor pict" src="images/paraImg-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor pict" src="images/paraImg-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor pict" src="images/paraImg-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor pict" src="images/paraImg-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+		</div>
+
+		<!-- Pied de page -->
+		<footer>
+			<a href="queryIndex.html" class="home"><i class="fa-solid fa-house"></i></a>
+			<div class="site">
+				<!-- Equipe et Adresse-->
+				<div class="team">
+					<div class="equipe">
+					<figure>
+						<img src="moins.png" alt="">
+						<figcaption>Ceci est la légende de la balise Figure de mise en forme</figcaption>
+						<h3>Designer</h3>
+					</figure>
+					<figure>
+						<img src="rrrr.jpg" alt="">
+						<figcaption>Ceci est la légende de la balise Figure de mise en forme</figcaption>
+						<h3>Developper</h3>
+					</figure>
+					<figure>
+						<img src="rrrr.jpg" alt="">
+						<figcaption>Ceci est la légende de la balise Figure de mise en forme</figcaption>
+						<h3>Designer</h3>
+					</figure>
+					</div>
+					<div class="contact">
+					
+					</div>
+				</div>
+				<!-- Services -->
+				<div class="services">
+					<h3>Nos Services</h3>
+					<ul class="categories" type="A">
+						<li>Graphisme</li>
+						<li>Illustration</li>
+						<li>UI UX</li>
+						<li>Création de Site CMS</li>
+						<li>Création de Site eCommerce</li>
+						<li>Création d'Application</li>
+						<li>Developpement Web</li>
+						<li>Application Web</li>
+						<li>Charte Graphique</li>
+						<li>Gestion de site en ligne</li>
+						<li>Web Designer</li>
+					</ul>
+				</div>
+				<!-- Réseaux Sociaux -->
+				<div class="identity">
+					<figure>
+						<img src="portrait.jpg" alt="">
+						<figcaption></figcaption>
+					</figure>
+						<div class="R-sociaux">
+							<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+							<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+						</div>
+					
+				</div>
+			</div>
+			<div class="mention"></div>
+		</footer>
+	</div>
+	
+	<script src="diaporama.js"></script>
+</body>
+</html>
